@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tapperij Schot — Schot in de roos. Klassieke bruincafé in het hartje van Rijssen. De lekkerste biertjes voor 21+.">
+  <title>Tapperij Schot — Schot in de roos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==================== NAVIGATIE ==================== -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Hoofdnavigatie">
+    <div class="nav__inner">
+      <a href="#home" class="nav__logo" aria-label="Tapperij Schot — naar boven">Tapperij Schot</a>
+      <ul class="nav__links" role="list">
+        <li><a href="#bierkaart">Bierkaart</a></li>
+        <li><a href="#over-ons">Over Ons</a></li>
+        <li><a href="#proeverij">Proeverij</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav__hamburger" id="hamburger" aria-label="Menu openen" aria-expanded="false" aria-controls="mobile-menu">
+        <svg id="icon-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" hidden><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobiel menu overlay -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-label="Navigatiemenu">
+    <button class="mobile-menu__close" id="mobile-close" aria-label="Menu sluiten">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+    </button>
+    <nav aria-label="Mobiele navigatie">
+      <ul role="list">
+        <li><a href="#bierkaart" class="mobile-menu__link">Bierkaart</a></li>
+        <li><a href="#over-ons" class="mobile-menu__link">Over Ons</a></li>
+        <li><a href="#proeverij" class="mobile-menu__link">Proeverij</a></li>
+        <li><a href="#contact" class="mobile-menu__link">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-menu__footer">
+      <span>Enterstraat 5 · Rijssen</span>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ==================== 1. HERO ==================== -->
+    <section class="hero" id="home" aria-label="Hero">
+      <img
+        class="hero__bg-img"
+        src="Images/Banner.jpg"
+        alt=""
+        aria-hidden="true"
+        width="1920"
+        height="1080"
+        loading="eager"
+      >
+      <div class="hero__grain" aria-hidden="true"></div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <!-- Hop decoratie links -->
+      <div class="hop-deco hop-deco--hero-left" aria-hidden="true">
+        <svg viewBox="0 0 160 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="80" cy="55" rx="38" ry="48" fill="currentColor" opacity="0.7"/>
+          <ellipse cx="40" cy="90" rx="30" ry="42" transform="rotate(-35 40 90)" fill="currentColor" opacity="0.6"/>
+          <ellipse cx="120" cy="90" rx="30" ry="42" transform="rotate(35 120 90)" fill="currentColor" opacity="0.6"/>
+          <ellipse cx="55" cy="135" rx="28" ry="38" transform="rotate(-20 55 135)" fill="currentColor" opacity="0.5"/>
+          <ellipse cx="105" cy="135" rx="28" ry="38" transform="rotate(20 105 135)" fill="currentColor" opacity="0.5"/>
+          <path d="M80 110 C64 124 61 152 69 172 C74 183 86 186 91 178 C99 162 97 132 80 110Z" fill="currentColor" opacity="0.9"/>
+          <path d="M67 135 Q80 130 93 135" stroke="white" stroke-width="1" fill="none" opacity="0.2"/>
+          <path d="M64 148 Q80 142 96 148" stroke="white" stroke-width="1" fill="none" opacity="0.2"/>
+          <path d="M66 161 Q80 155 94 161" stroke="white" stroke-width="1" fill="none" opacity="0.2"/>
+          <path d="M80 178 C80 195 76 210 72 225" stroke="currentColor" stroke-width="3" stroke-linecap="round" fill="none"/>
+          <path d="M80 195 C68 205 60 215 56 228" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.5"/>
+          <path d="M80 195 C92 205 100 215 104 228" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.5"/>
+        </svg>
+      </div>
+
+      <!-- Hop decoratie rechts -->
+      <div class="hop-deco hop-deco--hero-right" aria-hidden="true">
+        <svg viewBox="0 0 160 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="80" cy="55" rx="38" ry="48" fill="currentColor" opacity="0.7"/>
+          <ellipse cx="40" cy="90" rx="30" ry="42" transform="rotate(-35 40 90)" fill="currentColor" opacity="0.6"/>
+          <ellipse cx="120" cy="90" rx="30" ry="42" transform="rotate(35 120 90)" fill="currentColor" opacity="0.6"/>
+          <path d="M80 110 C64 124 61 152 69 172 C74 183 86 186 91 178 C99 162 97 132 80 110Z" fill="currentColor" opacity="0.9"/>
+          <path d="M80 178 C80 195 76 210 72 225" stroke="currentColor" stroke-width="3" stroke-linecap="round" fill="none"/>
+        </svg>
+      </div>
+
+      <div class="hero__content">
+        <span class="hero__label">TAPPERIJ · RIJSSEN · 21+</span>
+        <h1 class="hero__title">Tapperij Schot</h1>
+        <p class="hero__slogan">Schot in de roos</p>
+        <p class="hero__sub">Hartje Rijssen. Koud bier. Altijd gezellig.</p>
+        <a href="#bierkaart" class="btn btn--primary">
+          Bekijk onze bieren
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </a>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="hero__scroll" aria-hidden="true">
+        <span></span>
+      </div>
+    </section>
+
+    <!-- ==================== 2. BIERKAART PREVIEW ==================== -->
+    <section class="bierkaart" id="bierkaart" aria-labelledby="bierkaart-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="bierkaart-heading">Onze Bieren</h2>
+          <p>Koud, fris en altijd raak. Vier bieren die je wil drinken.</p>
+        </div>
+
+        <div class="bierkaart__grid">
+
+          <article class="beer-card">
+            <div class="beer-card__img">
+              <img src="Images/HeinekenFles.png" alt="Heineken Pilsener" loading="lazy" width="400" height="500">
+            </div>
+            <div class="beer-card__body">
+              <span class="beer-card__tag">Pilsener</span>
+              <h3>Heineken</h3>
+              <p>De klassieker. Koud, fris en altijd raak.</p>
+            </div>
+          </article>
+
+          <article class="beer-card">
+            <div class="beer-card__img">
+              <img src="Images/AmstelFles.png" alt="Amstel" loading="lazy" width="400" height="500">
+            </div>
+            <div class="beer-card__body">
+              <span class="beer-card__tag">Lager</span>
+              <h3>Amstel</h3>
+              <p>Zacht en verfrissend. Goed voor elk moment.</p>
+            </div>
+          </article>
+
+          <article class="beer-card">
+            <div class="beer-card__img">
+              <img src="Images/DespreadosFles.png" alt="Desperados" loading="lazy" width="400" height="500">
+            </div>
+            <div class="beer-card__body">
+              <span class="beer-card__tag">Speciaalbier</span>
+              <h3>Desperados</h3>
+              <p>Een vleugje tequila. Voor wie durft.</p>
+            </div>
+          </article>
+
+          <article class="beer-card beer-card--special">
+            <div class="beer-card__img">
+              <img src="Images/ShotjeFles.png" alt="Het Shotje — huisspecialiteit" loading="lazy" width="400" height="500">
+            </div>
+            <div class="beer-card__body">
+              <span class="beer-card__tag beer-card__tag--special">Huisspecialiteit</span>
+              <h3>Het Shotje</h3>
+              <p>De verrassing van de avond. Vraag de barman.</p>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="bierkaart__cta">
+          <a href="#contact" class="btn btn--ghost">Kom langs voor de volledige kaart →</a>
+        </div>
+      </div>
+
+      <!-- Hop decoratie -->
+      <div class="hop-deco hop-deco--section-right" aria-hidden="true">
+        <svg viewBox="0 0 160 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="80" cy="55" rx="38" ry="48" fill="currentColor" opacity="0.7"/>
+          <ellipse cx="40" cy="90" rx="30" ry="42" transform="rotate(-35 40 90)" fill="currentColor" opacity="0.6"/>
+          <ellipse cx="120" cy="90" rx="30" ry="42" transform="rotate(35 120 90)" fill="currentColor" opacity="0.6"/>
+          <path d="M80 110 C64 124 61 152 69 172 C74 183 86 186 91 178 C99 162 97 132 80 110Z" fill="currentColor" opacity="0.9"/>
+          <path d="M80 178 C80 200 76 212 72 228" stroke="currentColor" stroke-width="3" stroke-linecap="round" fill="none"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ==================== 3. OVER ONS ==================== -->
+    <section class="over-ons" id="over-ons" aria-labelledby="over-ons-heading">
+      <div class="container">
+        <div class="over-ons__grid">
+
+          <div class="over-ons__text">
+            <span class="section-label">ONS VERHAAL</span>
+            <h2 id="over-ons-heading">Over Tapperij Schot</h2>
+            <p>
+              Vrijdagavond, kwart over zes. De taps draaien hun eerste glazen vol. Achter in staat
+              een groep van vier iets te vieren wat ze morgen alweer vergeten zijn. Aan de bar zit
+              een stel dat hier tien jaar langs liep maar nooit naar binnen durfde.
+            </p>
+            <p>Dat was het moment. Shotje trok de deur open.</p>
+            <p>
+              Op Enterstraat 5 staat nu een bruincafé zoals Rijssen dat verdiende. De lambrisering
+              is donker, de lichten zijn warm en de klant aan het einde van de bar kent jouw naam
+              al voor je twee glazen op hebt.
+            </p>
+            <p>
+              Shotje groeide op in Rijssen en kende elke kruk van elke kroeg die er ooit was.
+              Hij wist wat er miste. Geen ingewikkelde cocktailkaart, geen trendy biermerk dat
+              over drie jaar niemand meer drinkt. Een plek waar je op vrijdagavond naartoe gaat
+              omdat het er fijn is. Omdat de muziek klopt. Omdat het bier koud is en de toog
+              lang genoeg voor iedereen.
+            </p>
+            <p>
+              Van Heineken tap tot huisspecialiteit <strong>Het Shotje</strong>. Lekker eten erbij,
+              voor wie wil. De avond loopt altijd langer dan gepland.
+            </p>
+          </div>
+
+          <div class="over-ons__image-wrap">
+            <div class="over-ons__image">
+              <img
+                src="https://placehold.co/700x560/1A0800/B87333?text=2"
+                alt="Interieur van Tapperij Schot"
+                loading="lazy"
+                width="700"
+                height="560"
+              >
+              <div class="over-ons__image-badge">
+                <span class="over-ons__badge-text">Est.</span>
+                <span class="over-ons__badge-year">2025</span>
+                <span class="over-ons__badge-location">Rijssen</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Hop decoratie links -->
+      <div class="hop-deco hop-deco--section-left" aria-hidden="true">
+        <svg viewBox="0 0 160 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="80" cy="55" rx="38" ry="48" fill="currentColor" opacity="0.6"/>
+          <ellipse cx="40" cy="90" rx="30" ry="42" transform="rotate(-35 40 90)" fill="currentColor" opacity="0.5"/>
+          <ellipse cx="120" cy="90" rx="30" ry="42" transform="rotate(35 120 90)" fill="currentColor" opacity="0.5"/>
+          <path d="M80 110 C64 124 61 152 69 172 C74 183 86 186 91 178 C99 162 97 132 80 110Z" fill="currentColor" opacity="0.8"/>
+          <path d="M80 178 C80 200 76 212 72 228" stroke="currentColor" stroke-width="3" stroke-linecap="round" fill="none"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ==================== 4. CTA BIERPROEVERIJ ==================== -->
+    <section class="proeverij" id="proeverij" aria-labelledby="proeverij-heading">
+      <img
+        class="proeverij__bg-img"
+        src="Images/Banner.jpg"
+        alt=""
+        aria-hidden="true"
+        width="1920"
+        height="1080"
+        loading="lazy"
+      >
+      <div class="proeverij__overlay" aria-hidden="true"></div>
+
+      <div class="proeverij__split">
+        <div class="proeverij__text">
+          <h2 id="proeverij-heading">Boek een Bierproeverij</h2>
+          <p>Proef 5 bieren onder begeleiding van Shotje zelf. Verhalen, smaak en een goed glas. Voor €25 per persoon.</p>
+          <div class="proeverij__features">
+            <div class="proeverij__feature">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 22H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-2"/><path d="M8 22v-4h8v4"/><path d="M8 12h8"/><path d="M8 8h8"/></svg>
+              <span>5 verschillende bieren</span>
+            </div>
+            <div class="proeverij__feature">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              <span>Op aanvraag</span>
+            </div>
+            <div class="proeverij__feature">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+              <span>Begeleiding inbegrepen</span>
+            </div>
+          </div>
+          <div class="proeverij__price-wrap">
+            <div class="proeverij__price">
+              <span class="proeverij__price-amount">€25</span>
+              <span class="proeverij__price-label">per persoon</span>
+            </div>
+          </div>
+          <a href="mailto:info@tapperijschot.nl" class="btn btn--amber">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            Reserveer via e-mail
+          </a>
+        </div>
+
+        <div class="proeverij__visual" aria-hidden="true">
+          <img src="https://placehold.co/800x600/1A0800/B87333?text=3" alt="" loading="eager">
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 5. CONTACT & OPENINGSTIJDEN ==================== -->
+    <section class="contact" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact__grid">
+
+          <div class="contact__info-col">
+            <h2 id="contact-heading">Kom langs</h2>
+            <p class="contact__address">Enterstraat 5<br>7461 GJ Rijssen</p>
+            <div class="contact__links">
+              <a href="mailto:info@tapperijschot.nl" class="contact__link">info@tapperijschot.nl</a>
+              <a href="tel:+31000000000" class="contact__link">+31 (0)00 000 00 00</a>
+            </div>
+            <div class="contact__divider" aria-hidden="true"></div>
+            <h3 class="contact__hours-heading">Openingstijden</h3>
+            <div class="hours-notice">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></svg>
+              Tapperij Schot opent binnenkort. Openingstijden volgen zodra de datum bekend is.
+            </div>
+            <table class="hours-table" aria-label="Openingstijden">
+              <tbody>
+                <tr>
+                  <td>Maandag – donderdag</td>
+                  <td>Binnenkort bekend</td>
+                </tr>
+                <tr>
+                  <td>Vrijdag – zaterdag</td>
+                  <td>Binnenkort bekend</td>
+                </tr>
+                <tr>
+                  <td>Zondag</td>
+                  <td>Binnenkort bekend</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="contact__map-col">
+            <div class="contact__map-wrap">
+              <iframe
+                src="https://maps.google.com/maps?q=Enterstraat+5%2C+7461+GJ+Rijssen&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="100%"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                title="Tapperij Schot op de kaart — Enterstraat 5, Rijssen"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+
+        <div class="footer__brand">
+          <span class="footer__logo">Tapperij Schot</span>
+          <p class="footer__slogan">Schot in de roos</p>
+          <p class="footer__address">Enterstraat 5, 7461 GJ Rijssen</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Volg ons op Instagram" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Volg ons op Facebook" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__nav-col">
+          <h4 class="footer__col-heading">Navigatie</h4>
+          <nav aria-label="Footer navigatie">
+            <a href="#bierkaart">Bierkaart</a>
+            <a href="#over-ons">Over Ons</a>
+            <a href="#proeverij">Proeverij</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+
+        <div class="footer__contact-col">
+          <h4 class="footer__col-heading">Contact</h4>
+          <ul class="footer__contact-list" role="list">
+            <li><a href="mailto:info@tapperijschot.nl">info@tapperijschot.nl</a></li>
+            <li><a href="tel:+31000000000">+31 (0)00 000 00 00</a></li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 Tapperij Schot &middot; Alle rechten voorbehouden</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
