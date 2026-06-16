@@ -7,7 +7,7 @@
   <title>Tapperij Schot — Schot in de roos</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;1,9..144,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -21,6 +21,7 @@
       <ul class="nav__links" role="list">
         <li><a href="#bierkaart">Bierkaart</a></li>
         <li><a href="#over-ons">Over Ons</a></li>
+        <li><a href="#vacatures">Vacatures</a></li>
         <li><a href="#proeverij">Proeverij</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -40,6 +41,7 @@
       <ul role="list">
         <li><a href="#bierkaart" class="mobile-menu__link">Bierkaart</a></li>
         <li><a href="#over-ons" class="mobile-menu__link">Over Ons</a></li>
+        <li><a href="#vacatures" class="mobile-menu__link">Vacatures</a></li>
         <li><a href="#proeverij" class="mobile-menu__link">Proeverij</a></li>
         <li><a href="#contact" class="mobile-menu__link">Contact</a></li>
       </ul>
@@ -55,7 +57,7 @@
     <section class="hero" id="home" aria-label="Hero">
       <img
         class="hero__bg-img"
-        src="Images/Banner.jpg"
+        src="Images/HeroBarman2.jpeg"
         alt=""
         aria-hidden="true"
         width="1920"
@@ -95,14 +97,8 @@
       </div>
 
       <div class="hero__content">
-        <span class="hero__label">TAPPERIJ · RIJSSEN · 21+</span>
         <h1 class="hero__title">Tapperij Schot</h1>
-        <p class="hero__slogan">Schot in de roos</p>
-        <p class="hero__sub">Hartje Rijssen. Koud bier. Altijd gezellig.</p>
-        <a href="#bierkaart" class="btn btn--primary">
-          Bekijk onze bieren
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
-        </a>
+        <p class="hero__slogan">Een schot in de roos</p>
       </div>
 
       <!-- Scroll indicator -->
@@ -193,43 +189,26 @@
             <span class="section-label">ONS VERHAAL</span>
             <h2 id="over-ons-heading">Over Tapperij Schot</h2>
             <p>
-              Vrijdagavond, kwart over zes. De taps draaien hun eerste glazen vol. Achter in staat
-              een groep van vier iets te vieren wat ze morgen alweer vergeten zijn. Aan de bar zit
-              een stel dat hier tien jaar langs liep maar nooit naar binnen durfde.
-            </p>
-            <p>Dat was het moment. Shotje trok de deur open.</p>
-            <p>
-              Op Enterstraat 5 staat nu een bruincafé zoals Rijssen dat verdiende. De lambrisering
-              is donker, de lichten zijn warm en de klant aan het einde van de bar kent jouw naam
-              al voor je twee glazen op hebt.
-            </p>
-            <p>
               Shotje groeide op in Rijssen en kende elke kruk van elke kroeg die er ooit was.
-              Hij wist wat er miste. Geen ingewikkelde cocktailkaart, geen trendy biermerk dat
-              over drie jaar niemand meer drinkt. Een plek waar je op vrijdagavond naartoe gaat
-              omdat het er fijn is. Omdat de muziek klopt. Omdat het bier koud is en de toog
-              lang genoeg voor iedereen.
+              Op Enterstraat 5 maakte hij wat er miste: een bruincafé met donkere lambrisering,
+              warme lichten en een toog lang genoeg voor iedereen. Geen ingewikkelde cocktailkaart.
+              Gewoon koud bier, lekker eten en muziek die klopt.
             </p>
             <p>
-              Van Heineken tap tot huisspecialiteit <strong>Het Shotje</strong>. Lekker eten erbij,
-              voor wie wil. De avond loopt altijd langer dan gepland.
+              Van Heineken tap tot huisspecialiteit <strong>Het Shotje</strong>. De avond loopt
+              altijd langer dan gepland.
             </p>
           </div>
 
           <div class="over-ons__image-wrap">
             <div class="over-ons__image">
               <img
-                src="https://placehold.co/700x560/1A0800/B87333?text=2"
-                alt="Interieur van Tapperij Schot"
+                src="Images/Shotjeportret2.jpeg"
+                alt="Shotje, eigenaar van Tapperij Schot"
                 loading="lazy"
                 width="700"
                 height="560"
               >
-              <div class="over-ons__image-badge">
-                <span class="over-ons__badge-text">Est.</span>
-                <span class="over-ons__badge-year">2025</span>
-                <span class="over-ons__badge-location">Rijssen</span>
-              </div>
             </div>
           </div>
 
@@ -248,11 +227,70 @@
       </div>
     </section>
 
-    <!-- ==================== 4. CTA BIERPROEVERIJ ==================== -->
+    <!-- ==================== 4. VACATURES ==================== -->
+    <section class="vacatures" id="vacatures" aria-labelledby="vacatures-heading">
+      <div class="container">
+        <div class="section-header">
+          <h2 id="vacatures-heading">Werken bij Schot</h2>
+          <p>Hou je van een vol café, goed bier en echte gastvrijheid? We zoeken mensen.</p>
+        </div>
+
+        <div class="vacatures__grid">
+
+          <article class="vacature-card">
+            <div class="vacature-card__img">
+              <img src="Images/Keukenmedewerker.jpeg" alt="Keuken medewerker" loading="lazy" width="400" height="500">
+            </div>
+            <div class="vacature-card__body">
+              <span class="vacature-card__tag">Keuken</span>
+              <h3>Keuken&shy;medewerker</h3>
+            </div>
+          </article>
+
+          <article class="vacature-card">
+            <div class="vacature-card__img">
+              <img src="Images/Servermedewerker.jpeg" alt="Service medewerker" loading="lazy" width="400" height="500">
+            </div>
+            <div class="vacature-card__body">
+              <span class="vacature-card__tag">Bediening</span>
+              <h3>Service&shy;medewerker</h3>
+            </div>
+          </article>
+
+          <article class="vacature-card">
+            <div class="vacature-card__img">
+              <img src="Images/Barmedewerker.jpeg" alt="Bar medewerker" loading="lazy" width="400" height="500">
+            </div>
+            <div class="vacature-card__body">
+              <span class="vacature-card__tag">Bar</span>
+              <h3>Bar&shy;medewerker</h3>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="vacatures__cta">
+          <a href="mailto:info@tapperijschot.nl?subject=Sollicitatie%20Tapperij%20Schot" class="btn btn--primary">Solliciteer nu →</a>
+        </div>
+      </div>
+
+      <!-- Hop decoratie -->
+      <div class="hop-deco hop-deco--section-right" aria-hidden="true">
+        <svg viewBox="0 0 160 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="80" cy="55" rx="38" ry="48" fill="currentColor" opacity="0.7"/>
+          <ellipse cx="40" cy="90" rx="30" ry="42" transform="rotate(-35 40 90)" fill="currentColor" opacity="0.6"/>
+          <ellipse cx="120" cy="90" rx="30" ry="42" transform="rotate(35 120 90)" fill="currentColor" opacity="0.6"/>
+          <path d="M80 110 C64 124 61 152 69 172 C74 183 86 186 91 178 C99 162 97 132 80 110Z" fill="currentColor" opacity="0.9"/>
+          <path d="M80 178 C80 200 76 212 72 228" stroke="currentColor" stroke-width="3" stroke-linecap="round" fill="none"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ==================== 5. CTA BIERPROEVERIJ ==================== -->
     <section class="proeverij" id="proeverij" aria-labelledby="proeverij-heading">
       <img
         class="proeverij__bg-img"
-        src="Images/Banner.jpg"
+        src="Images/Bierproeverij2.jpeg"
         alt=""
         aria-hidden="true"
         width="1920"
@@ -292,7 +330,7 @@
         </div>
 
         <div class="proeverij__visual" aria-hidden="true">
-          <img src="https://placehold.co/800x600/1A0800/B87333?text=3" alt="" loading="eager">
+          <img src="Images/Bierproeverij.jpeg" alt="" loading="eager" width="800" height="600">
         </div>
       </div>
     </section>
@@ -378,6 +416,7 @@
           <nav aria-label="Footer navigatie">
             <a href="#bierkaart">Bierkaart</a>
             <a href="#over-ons">Over Ons</a>
+            <a href="#vacatures">Vacatures</a>
             <a href="#proeverij">Proeverij</a>
             <a href="#contact">Contact</a>
           </nav>
